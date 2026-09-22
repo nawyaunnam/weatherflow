@@ -4,6 +4,20 @@ A DAG pipeline runner with dependency validation, retries, persisted task output
 
 **Focus:** Data engineering / orchestration / pipeline reliability · Python 3.11+ · Standard library · Offline demo
 
+## Tech stack
+
+| Layer | Technologies used |
+| --- | --- |
+| Language | Python 3.11+ |
+| Orchestration | Python dataclasses, topological DAG ordering, retries |
+| Persistence | SQLite run state and JSON task outputs |
+| Live source | Open-Meteo forecast and current-weather API |
+| Dashboard | HTML5, CSS, vanilla JavaScript; Python HTTP server |
+| Data transport | urllib.request, verified TLS, JSON, ETag caching |
+| Testing and CI | unittest, GitHub Actions; Python 3.11–3.13 matrix |
+
+The implementation uses the Python standard library; no external Python packages are required.
+
 ## Run in two commands
 
 From this project directory:
@@ -35,8 +49,6 @@ Sequential runner with local SQLite state, not an Airflow replacement. No parall
 
 This is a portfolio implementation, not evidence of production use or business
 impact. Any reported metrics describe only the included demonstration data.
-Built with AI assistance; review, customize, and understand the implementation
-before presenting it as a personal project in an interview.
 
 ## Live public-data workflow
 
