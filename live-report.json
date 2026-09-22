@@ -1,0 +1,47 @@
+{
+  "mode": "live fetch",
+  "generated_at": "2026-09-22T01:21:21.766474+00:00",
+  "sources": [
+    {
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&hourly=temperature_2m,relative_humidity_2m&current=temperature_2m,wind_speed_10m&past_days=7&forecast_days=1&timezone=UTC",
+      "fetched_at": "2026-09-22T01:21:21.753565+00:00"
+    }
+  ],
+  "result": {
+    "hourly_records": 192,
+    "mean_temperature_c": 20.267187500000002,
+    "minimum_temperature_c": 12.6,
+    "maximum_temperature_c": 28.7,
+    "first_hour": "2026-09-15T00:00",
+    "last_hour": "2026-09-22T23:00",
+    "project": "WeatherFlow",
+    "current": {
+      "time": "2026-09-22T01:15",
+      "interval": 900,
+      "temperature_2m": 17.6,
+      "wind_speed_10m": 8.8
+    },
+    "audit": [
+      {
+        "task": "aggregate",
+        "state": "success",
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "task": "extract",
+        "state": "success",
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "task": "validate",
+        "state": "success",
+        "attempts": 1,
+        "error": null
+      }
+    ],
+    "run_id": "d8ce1b5dd4036d1420195fd9560f6876ee973a88663a2266c526e4f34413665c",
+    "note": "Fixed New York coordinates, not the user location. Open-Meteo values include weather-model estimates and forecast hours; they are not all station measurements."
+  }
+}

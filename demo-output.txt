@@ -1,0 +1,57 @@
+{
+  "result": {
+    "extract": [
+      18,
+      20,
+      23,
+      19
+    ],
+    "validate": [
+      18,
+      20,
+      23,
+      19
+    ],
+    "aggregate": {
+      "mean_temperature": 20.0
+    }
+  },
+  "resumed_result": {
+    "extract": [
+      18,
+      20,
+      23,
+      19
+    ],
+    "validate": [
+      18,
+      20,
+      23,
+      19
+    ],
+    "aggregate": {
+      "mean_temperature": 20.0
+    }
+  },
+  "source_attempts": 2,
+  "audit": [
+    {
+      "task": "aggregate",
+      "state": "success",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "task": "extract",
+      "state": "success",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "task": "validate",
+      "state": "success",
+      "attempts": 1,
+      "error": null
+    }
+  ]
+}
